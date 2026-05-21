@@ -4,5 +4,4 @@ config/firebase-service-account.jsonnode_modules/
 .env
 .DS_Store
 frontend/node_modules/
-public/assets/
 config/firebase-service-account.json
