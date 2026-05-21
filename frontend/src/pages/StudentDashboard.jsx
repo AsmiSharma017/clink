@@ -14,7 +14,7 @@ export default function StudentDashboard() {
   const [currentPage, setCurrentPage] = useState(0)
   const [notification, setNotification] = useState('')
   const limit = 5
-  const socket = io("http://localhost:3000")
+  const socket = io()
   useEffect(() => {
 
     if (loading) return

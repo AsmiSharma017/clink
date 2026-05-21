@@ -39,7 +39,7 @@ export default function Login() {
       const result = await signInWithPopup(auth, provider);
       const token = await result.user.getIdToken();
 
-      const response = await fetch('http://localhost:3000/api/auth/firebase-login', {
+      const response = await fetch('/api/auth/firebase-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token, role: selectedRole })

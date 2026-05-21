@@ -15,7 +15,7 @@
 //     const password = document.getElementById('password').value
 
 //     try {
-//       const res = await fetch(`http://localhost:3000/api/auth/${selectedRole}/register`, {
+//       const res = await fetch(`/api/auth/${selectedRole}/register`, {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify({ name, email, password })
@@ -130,7 +130,7 @@ export default function Register() {
 
     try {
 
-      const res = await fetch(`http://localhost:3000/api/auth/${selectedRole}/register`, {
+      const res = await fetch(`/api/auth/${selectedRole}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password })
